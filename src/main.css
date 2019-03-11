@@ -1,0 +1,16 @@
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.widget {
+  padding: 10px;
+}
+
+.esri-ui .esri-attribution {
+  left: auto !important;
+}

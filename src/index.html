@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>ArcGIS API for JavaScript Extent Helper</title>
+  <meta name="description" content="Extent Helper map for ArcGIS API for JavaScript"/>
+  
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+  <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.2/css/calcite-web.min.css">
+
+  <script type="text/javascript">
+    var dojoConfig = {
+      async: true,
+      paths: {
+        axios: location.href + 'lib/axios.min',
+        beautify: location.href + 'lib/beautify.min',
+      }
+    };
+  </script>
+  <script src="https://js.arcgis.com/4.10/"></script>
+
+  
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+  <div id="extentDetailsWidget" class="extentDetailsWidget esri-widget widget">
+    <textarea id="extentDetails" rows="10" cols="50"></textarea>
+    <br />
+    <a id="copyExtentJson" class="btn btn-clear">Copy JSON</a>
+
+
+
+    <form action="https://codepen.io/pen/define" method="POST" target="_blank" class="right">
+      <input type="hidden" id="formDataCodepen" name="data" value="">
+      <input type="submit" value="New app at this location" class="btn right"></input>
+    </form>
+    <!-- <a id="newAppCodepen" class="btn right">New app at this location</a> -->
+  </div>
+
+
+
+  <script type="text/javascript">
+    var sc_project = 11965474;
+    var sc_invisible = 1;
+    var sc_security = "3cec35f0"; 
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <img class="statcounter" src="https://c.statcounter.com/11965474/0/3cec35f0/1/">
+  </noscript>
+</body>
+</html>
