@@ -4,8 +4,7 @@
   "description": "Extent helper for web apps in the ArcGIS API for JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gh-pages": "node_modules/.bin/gh-pages -d src"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,5 @@
     "url": "https://github.com/gavinr/arcgis-js-api-camera-helper/issues"
   },
   "homepage": "https://github.com/gavinr/arcgis-js-api-camera-helper#readme",
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
-  }
+  "devDependencies": {}
 }
