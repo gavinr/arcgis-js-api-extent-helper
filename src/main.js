@@ -82,8 +82,8 @@ function(Map, MapView, Search, webMercatorUtils, axios, beautify) {
       css: css,
       js: jt,
       head: head,
-      js_external: 'https://js.arcgis.com/4.10/dojo/dojo.js',
-      css_external: 'https://js.arcgis.com/4.10/esri/css/main.css;https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.2/css/calcite-web.min.css',
+      js_external: 'https://js.arcgis.com/4.11/dojo/dojo.js',
+      css_external: 'https://js.arcgis.com/4.11/esri/css/main.css;https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.2/css/calcite-web.min.css',
     };
 
     var JSONstring = 
