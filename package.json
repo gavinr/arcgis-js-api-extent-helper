@@ -1,15 +1,15 @@
 {
   "name": "arcgis-js-api-extent-helper",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Extent helper for web apps in the ArcGIS API for JavaScript",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gavinr/arcgis-js-api-camera-helper.git"
+    "url": "git+https://github.com/gavinr/arcgis-js-api-extent-helper.git"
   },
+  "bugs": {
+    "url": "https://github.com/gavinr/arcgis-js-api-extent-helper/issues"
+  },
+  "homepage": "https://github.com/gavinr/arcgis-js-api-extent-helper#readme",
   "keywords": [
     "arcgis",
     "extent",
@@ -18,9 +18,45 @@
   ],
   "author": "Gavin Rehkemper <gavin@gavinr.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gavinr/arcgis-js-api-camera-helper/issues"
+  "dependencies": {
+    "@esri/react-arcgis": "github:gavinr/react-arcgis#jsapi-4.12-temp",
+    "@types/arcgis-js-api": "4.12.0",
+    "@types/jest": "24.0.15",
+    "@types/js-beautify": "^1.8.1",
+    "@types/node": "12.6.8",
+    "@types/react": "16.8.23",
+    "@types/react-dom": "16.8.4",
+    "calcite-react": "^0.39.0",
+    "calcite-ui-icons-react": "^0.6.0",
+    "esri-loader": "^2.10.0",
+    "js-beautify": "^1.10.1",
+    "node-sass": "^4.12.0",
+    "raw.macro": "^0.3.0",
+    "react": "^16.8.6",
+    "react-arcgis": "gavinr/react-arcgis#jsapi-4.12",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "typescript": "3.5.3"
   },
-  "homepage": "https://github.com/gavinr/arcgis-js-api-camera-helper#readme",
-  "devDependencies": {}
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

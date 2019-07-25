@@ -2,18 +2,17 @@ require([
   "esri/Map",
   "esri/views/SceneView",
   "esri/views/MapView",
-  "esri/geometry/Extent",
   "dojo/domReady!"
 ],
-function(Map, SceneView, MapView, Extent) {
+function(Map, SceneView, MapView) {
   var map = new Map({
-    basemap: "hybrid"
+    basemap: "topo-vector"
   });
   
   var viewOptions = {
     container: "viewDiv",
     map: map,
-    extent: new Extent(EXTENTHERE)
+    extent: [EXTENTHERE]
   };
 
   // 2D:
