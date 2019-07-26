@@ -16,7 +16,7 @@ const App: React.FC = () => {
           webMercatorUtils.webMercatorToGeographic(evt.extent).toJSON()
         );
       });
-      setExtent(view.extent);
+      setExtent(webMercatorUtils.webMercatorToGeographic(view.extent).toJSON());
 
       var searchWidget = new Search({
         view: view
@@ -32,6 +32,7 @@ const App: React.FC = () => {
     <div className="App">
       <Map
         mapProperties={{ basemap: "topo-vector" }}
+        viewProperties={{ center: [0, 0], zoom: 3 }}
         loaderOptions={{ version: "4.12", css: true }}
         onLoad={(map, view) => {
           handleMapLoad(view as MapView);
