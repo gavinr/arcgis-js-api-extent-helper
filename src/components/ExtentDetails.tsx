@@ -30,9 +30,9 @@ export default function ExtentDetails({ extent }: ExtentDetailsProps) {
         css: styleTemplate,
         js: jt,
         head: htmlHeadTemplate,
-        js_external: "https://js.arcgis.com/4.12/dojo/dojo.js",
+        js_external: "https://js.arcgis.com/4.13/dojo/dojo.js",
         css_external:
-          "https://js.arcgis.com/4.12/esri/css/main.css;https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css"
+          "https://js.arcgis.com/4.13/esri/css/main.css;https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css"
       };
 
       var JSONstring = JSON.stringify(data);
