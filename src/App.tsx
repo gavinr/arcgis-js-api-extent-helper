@@ -34,7 +34,7 @@ const App: React.FC = () => {
       <Map
         mapProperties={{ basemap: "topo-vector" }}
         viewProperties={{ center: [0, 0], zoom: 3 }}
-        loaderOptions={{ version: "4.13", css: true }}
+        loaderOptions={{ css: true }}
         onLoad={(map, view) => {
           handleMapLoad(view as MapView);
         }}
