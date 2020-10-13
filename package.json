@@ -1,6 +1,6 @@
 {
   "name": "arcgis-js-api-extent-helper",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Extent helper for web apps in the ArcGIS API for JavaScript",
   "repository": {
     "type": "git",
