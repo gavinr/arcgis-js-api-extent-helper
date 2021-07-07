@@ -1,13 +1,32 @@
-import React, { useState } from "react";
-import { Map } from "@esri/react-arcgis";
+import React, { useState, useEffect } from "react";
+// import { Map } from "@esri/react-arcgis";
+import { 
+  useMap
+} from 'esri-loader-hooks';
 import { loadModules } from "esri-loader";
 import ExtentDetails from "./components/ExtentDetails";
-import MapView from "esri/views/MapView";
+// import MapView from "esri/views/MapView";
 
 const App: React.FC = () => {
   const [extent, setExtent] = useState({});
 
-  function handleMapLoad(view: MapView) {
+  const map = {
+    basemap: "topo-vector"
+  };
+  const options = {
+    view: {
+      center: [0, 0],
+      zoom: 3
+    }
+  };
+  const [ref, view] = useMap(map, options);
+
+  useEffect(() => {
+    if (!view) {
+      // view hasn't been created yet
+      return;
+    }
+
     loadModules([
       "esri/widgets/Search",
       "esri/geometry/support/webMercatorUtils"
@@ -27,18 +46,21 @@ const App: React.FC = () => {
         position: "top-right"
       });
     });
-  }
+    
+  }, [view]);
 
   return (
     <div className="App">
-      <Map
+      {/* <Map
         mapProperties={{ basemap: "topo-vector" }}
         viewProperties={{ center: [0, 0], zoom: 3 }}
         loaderOptions={{ css: true }}
         onLoad={(map, view) => {
           handleMapLoad(view as MapView);
         }}
-      />
+      /> */}
+      <div ref={ref} />
+
       <ExtentDetails extent={extent} />
     </div>
   );
